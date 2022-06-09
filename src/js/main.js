@@ -12,6 +12,7 @@ function converUnit() {
   converVol();
   converMass();
 }
+converUnit();
 
 function converLength() {
   let metresInFoot = 3.28084;
@@ -34,15 +35,13 @@ function converLength() {
     metres.toFixed(3) +
     ' ' +
     'metres';
-  console.log(feet);
-  console.log(metres);
 }
 
 function converVol() {
   let litersInGallons = 3.785411784;
 
-  let liters = converNum * litersInGallons;
-  let gallons = converNum / litersInGallons;
+  let gallons = converNum * litersInGallons;
+  let liters = converNum / litersInGallons;
 
   volumeEl.textContent =
     converNum +
