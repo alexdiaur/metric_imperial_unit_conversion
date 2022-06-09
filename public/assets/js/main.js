@@ -4,7 +4,7 @@ let numberEl = document.getElementById('num-el');
 let lengthEl = document.getElementById('length-el');
 let volumeEl = document.getElementById('volume-el');
 let massEl = document.getElementById('mass-el');
-let converNum;
+let converNum = 20;
 
 function converUnit() {
   converNum = numberEl.value;
@@ -21,7 +21,7 @@ function converLength() {
   lengthEl.innerHTML =
     converNum +
     ' ' +
-    'metres =' +
+    'meters =' +
     ' ' +
     feet.toFixed(3) +
     ' ' +
@@ -34,7 +34,7 @@ function converLength() {
     ' ' +
     metres.toFixed(3) +
     ' ' +
-    'metres';
+    'meters';
 }
 
 function converVol() {

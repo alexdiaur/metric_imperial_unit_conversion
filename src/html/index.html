@@ -4,19 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
     <title>A metrtic/imperial unit conversion</title>
   </head>
   <body>
-    <header>
-      <h1>Metric/Imperial unit conversion</h1>
-      <input type="number" id="num-el" onchange="converUnit()" />
+    <header class="header">
+      <h1 class="header__title">Metric/Imperial unit conversion</h1>
+      <input
+        class="header__input"
+        type="number"
+        id="num-el"
+        placeholder="0"
+        onchange="converUnit()"
+      />
     </header>
-    <h2>Length (Metre/Feet)</h2>
-    <p id="length-el">0 metres = 0 feet | 0 feet = 0 metres</p>
-    <h2>Volume (Liters/Gallons)</h2>
-    <p id="volume-el">0 litres = 0 gallons | 0 gallons = 0 litres</p>
-    <h2>Mass (Kilograms/Pounds)</h2>
-    <p id="mass-el">0 kilos = 0 pounds | 0 pounds = 0 kilos</p>
+    <div class="main">
+      <h2 class="main__title">Length (Meter/Feet)</h2>
+      <p class="main__converted" id="length-el">
+        0 meters = 0 feet | 0 feet = 0 meters
+      </p>
+      <h2 class="main__title">Volume (Liters/Gallons)</h2>
+      <p class="main__converted" id="volume-el">
+        0 litres = 0 gallons | 0 gallons = 0 litres
+      </p>
+      <h2 class="main__title">Mass (Kilograms/Pounds)</h2>
+      <p class="main__converted" id="mass-el">
+        0 kilos = 0 pounds | 0 pounds = 0 kilos
+      </p>
+    </div>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
